@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>title test test</title>
+    <title>Welcome to Advanced Web WordPress Theme</title>
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
     <?php wp_head() ?>
 </head>
@@ -9,7 +9,7 @@
 <div id="wrapper"/>
 <!-- wraps entire body, ending in footer -->
 <div id="header">
- <h1>Welcome to Advanced Web</h1>
+ <h1>Advanced Web WordPress Theme</h1>
  <h2><?php if (is_category('sport')) { ?>
    <img id="icon" src="<?php bloginfo('template_directory');?>/images/football.png" alt="Category Icon"/>
    <?php } ?>

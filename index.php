@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+
+
 <div id="main">
 	    <?php get_sidebar('left'); ?>
 	    <div id="content">
@@ -22,5 +24,7 @@
     <?php get_sidebar('right'); ?>
 </div>
 <div id="delimiter"></div>
-<?php
-get_footer(); ?>
+
+
+
+<?php get_footer(); ?>

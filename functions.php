@@ -55,4 +55,6 @@ register_nav_menu('slides', 'Slide menu');
 	add_theme_support('post-formats', array('status','link','aside'));
  }
  add_action( 'after_setup_theme', 'custom_theme_setup' );
+
+
 ?>

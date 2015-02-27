@@ -4,7 +4,7 @@
 <div id="main">
 	    <?php get_sidebar('left'); ?>
 	    <div id="content">
-	        <h1>Headerss</h1>
+	        <h1>Headersse</h1>
 	        <?php
 	            if (have_posts()) :
 	                while (have_posts()) : 

@@ -3,10 +3,17 @@
 <head>
 
     <title><?php wp_title(); ?></title>
+    
+    
     <?php wp_head() ?>
 </head>
 
 <body>
+    
+    
+    <h1><a class='current' href="<?php bloginfo();?>"> <?php bloginfo('name'); ?> </a></h1>
+    
+    
 <div id="wrapper"/>
 <!-- wraps entire body, ending in footer -->
 <div id="header">

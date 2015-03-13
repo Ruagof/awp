@@ -1,13 +1,16 @@
-<?php get_template_part('twitter', 'posts'); ?>
+                <?php get_template_part('twitter', 'posts'); ?>
 
-<?php wp_footer() ?>
+                <?php wp_footer() ?>
 
-<div id="footer">
+            <div id="footer">
                 <p>&copy; Peter Gough <?php echo date('Y'); ?></p>
-        </div>
-    </div>
+            </div>
 
-    <?php wp_footer(); ?>
+        </div>
+
+        <?php wp_footer(); ?>
+
+    <script>$(document).foundation();</script>
     
-</body> 
+    </body> 
 </html>

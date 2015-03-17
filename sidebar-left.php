@@ -1,7 +1,5 @@
 <div id="sidebar-left">
-    <?php wp_nav_menu( 
-            array( 'theme_location' => 'main' )
-          ); ?>
+
     <h2 ><?php _e('Tags'); ?></h2>
     <?php 
 		$tags = get_tags();

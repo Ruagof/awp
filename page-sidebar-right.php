@@ -1,34 +1,34 @@
-
+<?php
+/*
+    Template name: Right Sidebar
+*/
+?>
     
 <?php get_header(); ?>
 
 
 <div id="main">
+<!-- closes in footer -->    
 	    
-	    <div id="content">
-            
-           
-	        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>  <!-- The wordpress loop --!>
+        <div class="largecontent">
 
-	           <h1><?php the_title(); ?></h1>
-	           <h3>Posted on <?php the_time('F jS, Y') ?></h3>
-	           <p><?php the_content(__('(more...)')); ?></p>
-	           <p><?php the_tags( 'Tags: ', ', ', '<br />' ); ?></p>
-	           <hr>
-	        <?php endwhile; else: ?>
-	                
-                <p><?php _e('Sorry, no posts found.'); ?></p>
-	        
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>  <!-- The wordpress loop --!>
+           <h1><?php the_title(); ?></h1>
+                   <p class="dateofpost"> Posted on <?php the_time('F jS, Y') ?></h3>
+                   <p><?php the_content(__('(more...)')); ?></p>
+                   <p><?php the_tags( 'Tags: ', ', ', '<br />' ); ?></p>
+                   <hr>
+                   <?php endwhile; else: ?>
+            <p><?php _e('Sorry, no posts found.'); ?></p>
             <?php endif; ?>
-	    
+
         </div>
+        <!-- end div largecontent -->
 
-    <?php get_sidebar('right'); ?>
+        <?php get_sidebar('right'); ?>
 
-</div>
-
-<div id="delimiter"></div>
-
-<?php get_footer(); ?>
+    <div id="delimiter"></div>
+            
+    <?php get_footer(); ?>
 
 

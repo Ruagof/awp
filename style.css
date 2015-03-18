@@ -18,23 +18,75 @@ body { text-align: left; padding-left: 5px; font-family: 'Open Sans', sans-serif
 #header { border: 2px #a2a2a2 solid; background-color: white;}
 #content { text-align: left; width: 600px; padding-left: 6px; border: 2px #a2a2a2 solid; float: left; }
 #sidebar-right { width: 165px; border: 2px #a2a2a2 solid; float: right; background-color: lightgray;}
-#sidebar-left { width: 166px; border: 2px #a2a2a2 solid; float: left; background-color: lightgray;}
+#sidebar-left { width: 166px; border: 2px #a2a2a2 solid; float: left; text-align:center; background-color: lightgray; display:inline;}
 #delimiter { clear: both; }
 #footer { border: 2px #a2a2a2 solid; background-color: darkcyan; }
 .title { font-size: 11pt; font-family: verdana; font-weight: bold; }
 p.dateofpost {color: gray; font-size: 9pt}
 
 /* Auto-generated standard menu CSS */
-li.page_item {background-color: darkgray;}
+li.page_item {background-color: darkgray; text-align: center; background-color: aqua; text-decoration: none;}
 li.page_item_has_children {background-color: brown;}
 
-.archive-heading {color: cadetblue;}
-.categories-heading {color: cadetblue;}
+h2.archive-heading {color: cadetblue; text-align: center; background-color: white;}
+h2.categories-heading {color: cadetblue; text-align: center; background-color: white;}
+
+
 .largecontent {background-color: burlywood; width: 780px; float: left;}
 
+header nav{
+font-size: 0.9em; /* ~11pt */
+margin: 10px 0 0 0.03em; /* 33px */
+float: left;
+}
 
-/* Auto-generated CSS based on menu created in wp-admin */
-#menu-main-menu li.menu-item {background-color:green;}
-#menu-main-menu li.menu-item-has-children {background-color: darkgray;}
-#menu-main-menu ul.sub-menu {background-color: orange;}
-#menu-main-menu ul.sub-menu li.menu-item {background-color: orange;}
+header nav ul li{
+display: inline;
+}
+
+.navi{
+font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+text-transform: uppercase;
+font-weight: bold;
+margin-top: 15px;
+}
+
+.navi ul.pages{
+margin: 0; padding: 0;
+}
+
+.navi ul.pages li{
+display: inline;
+margin: 5px;
+}
+
+a{ 
+font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+font-weight: bold;
+color: #c94623;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+a:hover{ 
+color: #f76d36;
+}
+
+a img { border: none; }
+
+header nav ul li{
+display: inline;
+}
+
+ul {
+  overflow: auto;
+  list-style-type: none;
+}
+
+li {
+  height: 25px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 20px;
+}

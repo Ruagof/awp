@@ -1,4 +1,4 @@
-        <?php get_template_part('twitter', 'posts'); ?>
+
 
         <?php wp_footer() ?>
 

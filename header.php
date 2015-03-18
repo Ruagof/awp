@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
         <head>
             <title><?php bloginfo('name');?></title>
@@ -19,17 +19,20 @@
         </div>
         
     
-          
+        
         <?php
              $defaults = array(
-                'container' => false,
+                'container' => true,
+                 // by default wp wraps menu in a div (ul)
                 'theme_location' => 'primary-menu',
+                 // tell wp where the primary template is
                 'menu_class' => 'no-bullet'
+                 // assign a class to the ul
              );
             wp_nav_menu('$defaults');
                  
         ?>   
-              
+          
          
             
         

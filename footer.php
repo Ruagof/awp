@@ -10,7 +10,7 @@
     <!-- wraps entire body, starts from header -->
 
         <?php wp_footer(); ?>
-        <script>$(document).foundation();</script>
+        <script>$(document).foundation.min();</script>
     
     </body>
     <!-- startted in header -->

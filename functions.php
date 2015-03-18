@@ -1,58 +1,43 @@
 <?php
-add_filter('the_content', 'bad_word_filter');
-add_filter('the_title', 'bad_word_filter');
-add_filter('content_edit_pre', 'bad_word_filter');
-function bad_word_filter($content) {
-	$bad_words = array( 'douchebag', 'wally' );
-	$content = str_ireplace($bad_words, '*****', $content);
-	return $content;
+
+add_theme_support('menus');
+// we have to add this, it's not there automatically
+
+
+
+
+function register_theme_menus() {
+    register_nav_menus(
+        //accepts an array of nav menus we want to have on the site
+        array(
+            'primary-menu' => __('Primary Menu')
+            // I only have one menu, but addding menus this way makes it more expandable
+        )
+    );
 }
+add_action('init', 'register_theme_menus');
+// add when WordPress is first initializing, then we get a manage locations section    
 
-add_filter('the_content', 'good_word_filter');
-function good_word_filter($content) {
-	$bad_words = array( 'bad', 'worse' );
-	$good_words = array( 'good', 'better' );
-	$content = str_ireplace($bad_words, $good_words,
-			$content);
-	return $content;
+
+// this is a good way to load dependent files
+function rua_theme_styles(){
+    wp_enqueue_style('main_css', get_template_directory_uri().'/style.css');
+    // main css file
+    wp_enqueue_style('secondary_css', get_template_directory_uri().'/css/secondary.css');
+    // I've added this in case I want a second css file
 }
+add_action('wp_enqueue_scripts', 'rua_theme_styles');
+// these css files are added with this line
 
-// add_filter( 'the_title', 'copyright_the_title', 10, 2 );
-// function copyright_the_title( $title, $id = null ) {
-// 	return $title . ' &copy; Larkin Cunningham';
-// }
 
-add_action( 'init', 'register_post_types' );
-function register_post_types() {
-	register_post_type('slides',
-		array(
-			'labels' => array(
-			'name' => 'Slides'
-		),
-		'public' => true,
-		)
-	);
+function rua_theme_js(){
+    wp_enqueue_script('main_js', get_template_directory_uri().'/js/app.js', array('jquery', 'foundation.min.js'), '', true);
+    wp_enqueue_script('modernizr_js', get_template_directory_uri().'/js/modernizr.js', '', '', false);
+    // this is the http://modernizr.com/ file that detects HTML5 and CSS3 features in the user’s browser
+    //wp_enqueue_script('foundation_js', get_template_directory_uri().'/js/foundation.min.js', array('jquery'), '', true);
+    //I'm looking into Foundation at the moment, may not use it.  
 }
+add_action('wp_enqueue_scripts', 'rua_theme_js');
+// these js files are added with this line
 
-//[bold]
-function bold_func( $atts, $content=null ){
-	$a = shortcode_atts( array(
-		'colour' => ''
-	), $atts );
-	return "<strong style='color:".$a['colour']."';>".$content."</strong>";
-}
-add_shortcode( 'bold', 'bold_func' );
-
-register_nav_menu('main', 'Main menu');
-register_nav_menu('slides', 'Slide menu');
-
- global $wp_version;
- function custom_theme_setup() {
- 	if (version_compare($wp_version, '3.4', '>=' )) {
- 		add_theme_support('custom-background', array(
-	'default-color'          => '#eeeeee'));
- 	}
-	add_theme_support('post-formats', array('status','link','aside'));
- }
- add_action( 'after_setup_theme', 'custom_theme_setup' );
 ?>

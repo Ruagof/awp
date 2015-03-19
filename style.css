@@ -20,7 +20,7 @@ body { text-align: left; padding-left: 5px; font-family: 'Open Sans', sans-serif
 #sidebar-right { width: 165px; border: 2px #a2a2a2 solid; float: right; background-color: lightgray;}
 #sidebar-left { width: 166px; border: 2px #a2a2a2 solid; float: left; text-align:center; background-color: lightgray; display:inline;}
 #delimiter { clear: both; }
-#footer { border: 2px #a2a2a2 solid; background-color: darkcyan; }
+#footer { border: 2px solid; background-color: darkgreen; }
 
 .title { font-size: 11pt; font-family: verdana; font-weight: bold; }
 
@@ -30,11 +30,24 @@ p.dateofpost {color: gray; font-size: 9pt}
 li.page_item { color: black; text-align: center; background-color: seashell; text-decoration: none;}
 li.page_item_has_children {background-color: brown;}
 
-h2.archive-heading {color: cadetblue; text-align: center; background-color: white;}
-h2.categories-heading {color: cadetblue; text-align: center; background-color: white;}
+h1{
+    font-family: verdana, sans-serif; color: darkgreen; font-size: 16pt;
+}
+
+h2{
+    font-family: verdana, sans-serif; color: darkgreen; font-size: 12pt;
+}
+
+h2.archive-heading {color: darkgreen; text-align: center; background-color: white;}
+h2.categories-heading {color: darkgreen; text-align: center; background-color: white;}
 
 
-.largecontent {background-color: burlywood; width: 780px; float: left;}
+.largecontent { padding: 20px; width: 740px; float: left;}
+
+
+#testdiv{
+    background-color: aqua;
+}
 
 header nav{
 font-size: 10pt; 
@@ -47,7 +60,7 @@ display: inline;
 }
 
 .navi{
-font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+font-family: Verdana, "Verdana Ref", sans-serif;
 text-transform: uppercase;
 font-weight: bold;
 margin-top: 15px;
@@ -63,9 +76,9 @@ margin: 5px;
 }
 
 a{ 
-font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+font-family: verdana, sans-serif;
 font-weight: bold;
-color: #c94623;
+color: darkgreen;
 text-transform: uppercase;
 text-decoration: none;
 }
@@ -80,9 +93,21 @@ header nav ul li{
 display: inline;
 }
 
-ul {
+ul  {
   overflow: auto;
   list-style-type: none;
+}
+
+
+
+ul.archive  {
+  overflow: auto;
+  list-style-type: none;
+}
+
+ul.tags{
+     overflow: auto;
+  list-style-type: none; 
 }
 
 li {

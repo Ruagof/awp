@@ -10,8 +10,11 @@ function register_theme_menus() {
     register_nav_menus(
         //accepts an array of nav menus we want to have on the site
         array(
-            'primary-menu' => __('Primary Menu')
+            'primary-menu' => __('Primary Menu'),
+            'menu_class'      => 'menu',
+            
             // I only have one menu, but addding menus this way makes it more expandable
+            
         )
     );
 }

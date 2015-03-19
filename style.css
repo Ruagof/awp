@@ -21,11 +21,13 @@ body { text-align: left; padding-left: 5px; font-family: 'Open Sans', sans-serif
 #sidebar-left { width: 166px; border: 2px #a2a2a2 solid; float: left; text-align:center; background-color: lightgray; display:inline;}
 #delimiter { clear: both; }
 #footer { border: 2px #a2a2a2 solid; background-color: darkcyan; }
+
 .title { font-size: 11pt; font-family: verdana; font-weight: bold; }
+
 p.dateofpost {color: gray; font-size: 9pt}
 
 /* Auto-generated standard menu CSS */
-li.page_item {background-color: darkgray; text-align: center; background-color: aqua; text-decoration: none;}
+li.page_item { color: black; text-align: center; background-color: seashell; text-decoration: none;}
 li.page_item_has_children {background-color: brown;}
 
 h2.archive-heading {color: cadetblue; text-align: center; background-color: white;}
@@ -35,8 +37,8 @@ h2.categories-heading {color: cadetblue; text-align: center; background-color: w
 .largecontent {background-color: burlywood; width: 780px; float: left;}
 
 header nav{
-font-size: 0.9em; /* ~11pt */
-margin: 10px 0 0 0.03em; /* 33px */
+font-size: 10pt; 
+margin: 10px 0 0 33px; 
 float: left;
 }
 
@@ -89,4 +91,30 @@ li {
   margin-right: 0px;
   border-right: 1px solid #aaa;
   padding: 0 20px;
+}
+
+li:last-child {
+  border-right: none;
+}
+ 
+li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 15pt Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+ 
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ 
+li a:hover {
+  color: #666;
+}
+ 
+li.active a {
+  font-weight: bold;
+  color: #333;
 }

@@ -3,7 +3,7 @@
         <?php wp_footer() ?>
 
         <div id="footer">
-            <p>&copy; Peter Gough <?php echo date('Y'); ?></p>
+            <p>&copy; Ruagof <?php echo date('Y'); ?></p>
         </div>
 
     </div>

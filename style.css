@@ -38,6 +38,10 @@ h1{
     font-family: verdana, sans-serif; color: darkslategray; font-size: 28pt;
 }
 
+h1.header{
+    text-align: center;
+}
+
 h2{
     font-family: verdana, sans-serif; color: darkslategreen; font-size: 12pt;
 }
@@ -46,12 +50,35 @@ h2.archive-heading {color: darkslategreen; text-align: center; background-color:
 h2.categories-heading {color: darkslategreen; text-align: center; background-color: white;}
 
 
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .largecontent { padding: 20px; width: 740px; float: left;}
 
+.cff-post-text{
+    background-color: aliceblue;
+    padding: 2px;
+}
+
+div.cff-author{
+    color: black;
+    border: 2px solid black;
+}
 
 #testdiv{
     background-color: aqua;
 }
+
+
+#cff-author{
+    color: aquamarine;
+    background-color: brown;
+}
+
 
 header nav{
 font-size: 10pt; 

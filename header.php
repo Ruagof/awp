@@ -13,7 +13,7 @@
         
         <div id="header">
             
-            <h1>Cushinstown AC</h1>
+            <h1 class="header">Cushinstown AC</h1>
             <h2><?php if (is_category('sport')) 
                     { ?><img id="icon" src="<?php bloginfo('template_directory');?>/images/football.png" alt="Category Icon"/><?php } ?></h2>
         </div>

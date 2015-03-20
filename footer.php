@@ -3,7 +3,8 @@
         <?php wp_footer() ?>
 
         <div id="footer">
-            <p>&copy; Ruagof <?php echo date('Y'); ?></p>
+            <p class="ruagof">&copy; <a href="mailto:someone@example.com?Subject=Hello%20there" target="_top">Ruagof</a> <?php echo date('Y'); ?></p>
+      
         </div>
 
     </div>

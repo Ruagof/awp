@@ -2,6 +2,7 @@
 
 
                         <div id="main">
+                            
                             <?php get_sidebar('left'); ?>
 
                                <div id="content">

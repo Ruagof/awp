@@ -20,7 +20,7 @@ body { text-align: left; padding-left: 5px; font-family: 'Open Sans', sans-serif
 #sidebar-right { width: 165px; border: 2px #a2a2a2 solid; float: right; background-color: lightgray;}
 #sidebar-left { width: 166px; border: 2px #a2a2a2 solid; float: left; text-align:center; background-color: lightgray; display:inline;}
 #delimiter { clear: both; }
-#footer { border: 2px solid; background-color: darkslategreen; }
+#footer {  }
 
 .title { font-size: 11pt; font-family: verdana; font-weight: bold; }
 
@@ -49,8 +49,22 @@ h2{
 h2.archive-heading {color: darkslategreen; text-align: center; background-color: white;}
 h2.categories-heading {color: darkslategreen; text-align: center; background-color: white;}
 
+.cff-wrapper a{
+    color: #3B5998; 
+}
 
+.cff-wrapper {
+    background: #edf0f5; 
+}
 
+p.ruagof{
+    font-size: 8pt;
+    padding-right: 25px;
+    text-align: right;
+}
+p.cff-page-name{
+    color: #3B5998;
+}
 .aligncenter {
 	display: block;
 	margin-left: auto;
@@ -60,13 +74,18 @@ h2.categories-heading {color: darkslategreen; text-align: center; background-col
 .largecontent { padding: 20px; width: 740px; float: left;}
 
 .cff-post-text{
-    background-color: aliceblue;
-    padding: 2px;
+    
+    padding: 15px;
+}
+
+.cff-text{
+    padding: 10px;
 }
 
 div.cff-author{
-    color: black;
-    border: 2px solid black;
+    
+    border-top: 10px solid white;
+    padding-top: 6px
 }
 
 #testdiv{

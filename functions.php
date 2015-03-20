@@ -3,7 +3,17 @@
 add_theme_support('menus');
 // we have to add this, it's not there automatically
 
-
+function custom_login() {
+	$creds = array();
+	$creds['user_login'] = 'example';
+	$creds['user_password'] = 'plaintextpw';
+	$creds['remember'] = true;
+	$user = wp_signon( $creds, false );
+	if ( is_wp_error($user) )
+		echo $user->get_error_message();
+}
+// run it before the headers and cookies are sent
+add_action( 'after_setup_theme', 'custom_login' );
 
 
 function register_theme_menus() {

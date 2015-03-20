@@ -12,8 +12,7 @@ function custom_login() {
 	if ( is_wp_error($user) )
 		echo $user->get_error_message();
 }
-// run it before the headers and cookies are sent
-add_action( 'after_setup_theme', 'custom_login' );
+
 
 
 function register_theme_menus() {

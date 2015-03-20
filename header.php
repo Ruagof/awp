@@ -3,7 +3,7 @@
         <head>
             <title><?php bloginfo('name');?></title>
             <?php wp_head(); ?>  
-        </head>
+            <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>        </head>
 
     <body>
     <!-- ends in footer -->   
@@ -12,10 +12,7 @@
     <!-- wraps entire body, ending in footer -->
         
         <div id="header">
-            
-            <h1 class="header">Cushinstown AC</h1>
-            <h2><?php if (is_category('sport')) 
-                    { ?><img id="icon" src="<?php bloginfo('template_directory');?>/images/football.png" alt="Category Icon"/><?php } ?></h2>
+            <h1 class="header">Cushinstown AC</h1> 
         </div>
         
     
@@ -32,6 +29,11 @@
             wp_nav_menu('$defaults');
                  
         ?>   
+        <div id="searchform">
+        <?php get_search_form(); ?>
+        </div>
+            
+            
           
          
             

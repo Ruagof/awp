@@ -17,7 +17,7 @@
                                     <hr/> 
                                     <?php endwhile; else: ?>
 
-                                        <p><?php _e('Sorry, no posts found 404.'); ?></p>
+                                        <p><?php _e('Sorry, no posts found with that search.'); ?></p>
 
                                     <?php endif; ?>
                                   

@@ -11,23 +11,26 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 */
 
-body { text-align: left; padding-left: 5px; font-family: 'Open Sans', sans-serif; background-color: #efefef ;}
+body { text-align: left; padding-left: 5px; font-family: 'Lora', sans-serif; background-color: #efefef ;}
 
 #main { width: 950px; }
 #wrapper { border: 1px darkgrey solid; width:950px;  margin:0px auto; background-color: white;}
-#header { border: 2px #a2a2a2 solid; background-color: white;}
-#content { text-align: left; width: 600px; padding-left: 6px; border: 2px #a2a2a2 solid; float: left; }
+#header {  background-color: white;}
+#content { text-align: left; width: 600px; padding-left: 6px; float: left; }
 #sidebar-right { width: 165px; border: 2px #a2a2a2 solid; float: right; background-color: lightgray;}
-#sidebar-left { width: 166px; border: 2px #a2a2a2 solid; float: left; text-align:center; background-color: lightgray; display:inline;}
+#sidebar-left { width: 166px; clear:both; float: left; text-align:center; background-color: lightgray; display:inline;}
 #delimiter { clear: both; }
 #footer {  }
 
-.title { font-size: 11pt; font-family: verdana; font-weight: bold; }
+.largecontent { padding: 20px; width: 740px; float: left;}
+
+.title { font-size: 11pt; font-family: 'Lora', sans-serif; font-weight: bold; }
 
 p.dateofpost {color: gray; font-size: 9pt}
 
 p{
-    font-family: verdana;
+    font-family: 'Lora', sans-serif;
+    font-size: 12pt;
 }
 
 /* Auto-generated standard menu CSS */
@@ -35,33 +38,51 @@ li.page_item { color: black; text-align: center; background-color: seashell; tex
 li.page_item_has_children {background-color: brown;}
 
 h1{
-    font-family: verdana, sans-serif; color: darkslategray; font-size: 28pt;
+    font-family: 'Lora', sans-serif; color: darkslategray; font-size: 28pt;
 }
 
 h1.header{
+    font-family: 'Lora', sans-serif;
     text-align: center;
 }
 
 h2{
-    font-family: verdana, sans-serif; color: darkslategreen; font-size: 12pt;
+    font-family: 'Lora', sans-serif; color: darkslategreen; font-size: 12pt;
 }
 
-h2.archive-heading {color: darkslategreen; text-align: center; background-color: white;}
-h2.categories-heading {color: darkslategreen; text-align: center; background-color: white;}
+h2.archive-heading {font-family: 'Lora', sans-serif; color: darkslategreen; text-align: center; background-color: white; }
+h2.categories-heading {font-family: 'Lora', sans-serif;color: darkslategreen; text-align: center; background-color: white;}
 
-.cff-wrapper a{
-    color: #3B5998; 
+#img{
+
+    padding-top: 20px;
+    float:left;
 }
 
-.cff-wrapper {
-    background: #edf0f5; 
+
+#sponsorlogo{
+    clear:none;
+    float:left;
+    margin-bottom: 10px;
 }
+#sponsors{
+    font-family: sans-serif;
+    font-size: 10pt;
+    padding-left: 20px;
+    color: darkgray;
+}
+
+
+
 
 p.ruagof{
     font-size: 8pt;
     padding-right: 25px;
     text-align: right;
 }
+
+
+/* CSS for Facebook Feed styling */
 p.cff-page-name{
     color: #3B5998;
 }
@@ -71,11 +92,9 @@ p.cff-page-name{
 	margin-right: auto;
 }
 
-.largecontent { padding: 20px; width: 740px; float: left;}
 
 .cff-post-text{
-    
-    padding: 15px;
+    font-family: 'Lora'
 }
 
 .cff-text{
@@ -88,16 +107,16 @@ div.cff-author{
     padding-top: 6px
 }
 
-#testdiv{
-    background-color: aqua;
+.cff-wrapper a{
+    color: #3B5998; 
+}
+
+.cff-wrapper {
+    background: #edf0f5; 
 }
 
 
-#cff-author{
-    color: aquamarine;
-    background-color: brown;
-}
-
+/* CSS for NAvigation styling */
 
 header nav{
 font-size: 10pt; 
@@ -125,8 +144,12 @@ display: inline;
 margin: 5px;
 }
 
+
+
+/* CSS for Links styling */
+
 a{ 
-font-family: verdana, sans-serif;
+font-family: font-family: 'Lora', sans-serif;
 font-weight: bold;
 color: darkslategreen;
 text-transform: uppercase;
@@ -155,9 +178,16 @@ ul.archive  {
   list-style-type: none;
 }
 
+ul.categories li cat-item{
+    font-family: 'Lora';
+    font-size: 10pt;
+    color: mediumvioletred;
+}
+
 ul.tags{
      overflow: auto;
   list-style-type: none; 
+    color: mediumvioletred;
 }
 
 li {
@@ -193,3 +223,22 @@ li.active a {
   font-weight: bold;
   color: #333;
 }
+
+
+/* Deal with WordPress images */
+img.centered, .aligncenter, div.aligncenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px:
+}
+
+.searchform{
+    float: right;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-family: verdana;
+    font-size: 8pt;
+}
+
+

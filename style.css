@@ -17,8 +17,8 @@ body { text-align: left; padding-left: 5px; font-family: 'Lora', sans-serif; bac
 #wrapper { border: 1px darkgrey solid; width:950px;  margin:0px auto; background-color: white;}
 #header {  background-color: white;}
 #content { text-align: left; width: 600px; padding-left: 6px; float: left; }
-#sidebar-right { margin-top: 25px; width: 165px; border: 2px #a2a2a2 solid; float: right; background-color: lightgray;}
-#sidebar-left { margin-top: 25px; width: 166px; clear:both; float: left; text-align:center; background-color: lightgray; display:inline;}
+#sidebar-right { margin-top: 25px; width: 160px;  font-family: 'Lora'; font-size: 8pt; float: right; text-align:center; background-color: lightgray; display:inline;}
+#sidebar-left { margin-top: 25px; width: 160px; clear:both; float: left; text-align:center; background-color: lightgray; display:inline;}
 #delimiter { clear: both; }
 #footer {  }
 
@@ -176,17 +176,16 @@ ul.archive  {
   list-style-type: none;
 }
 
-ul.categories li cat-item{
-    font-family: 'Lora';
-    font-size: 10pt;
-    color: mediumvioletred;
+
+ul #catright{
+      font-size: 8pt;
+    color: aqua;
 }
 
-ul.tags{
-     overflow: auto;
-  list-style-type: none; 
-    color: mediumvioletred;
+.sidebar-right{
+ 
 }
+
 
 li {
   height: 25px;
@@ -194,7 +193,10 @@ li {
   margin-right: 0px;
   border-right: 1px solid #aaa;
   padding: 0 20px;
+
 }
+
+
 
 li:last-child {
   border-right: none;

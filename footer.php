@@ -22,6 +22,7 @@
 
 
         <script>$(document).foundation.min();</script>
+
     
     </body>
     <!-- startted in header -->

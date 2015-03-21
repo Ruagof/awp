@@ -15,6 +15,12 @@ function custom_login() {
 
 
 
+
+
+
+
+
+
 function register_theme_menus() {
     register_nav_menus(
         //accepts an array of nav menus we want to have on the site
@@ -48,8 +54,27 @@ function rua_theme_js(){
     // this is the http://modernizr.com/ file that detects HTML5 and CSS3 features in the user’s browser
     //wp_enqueue_script('foundation_js', get_template_directory_uri().'/js/foundation.min.js', array('jquery'), '', true);
     //I'm looking into Foundation at the moment, may not use it.  
+    
 }
 add_action('wp_enqueue_scripts', 'rua_theme_js');
 // these js files are added with this line
 
+
+
+
+
+
+
+add_filter( 'comments_open', 'my_comments_open', 10, 2 );
+
+function my_comments_open( $open, $post_id ) {
+
+	$post = get_post( $post_id );
+
+        if (get_post_meta($post->ID, 'Allow Comments', true)) {$open = true;}
+
+	return $open;
+}
+
 ?>
+

@@ -17,12 +17,12 @@ body { text-align: left; padding-left: 5px; font-family: 'Lora', sans-serif; bac
 #wrapper { border: 1px darkgrey solid; width:950px;  margin:0px auto; background-color: white;}
 #header {  background-color: white;}
 #content { text-align: left; width: 600px; padding-left: 6px; float: left; }
-#sidebar-right { width: 165px; border: 2px #a2a2a2 solid; float: right; background-color: lightgray;}
-#sidebar-left { width: 166px; clear:both; float: left; text-align:center; background-color: lightgray; display:inline;}
+#sidebar-right { margin-top: 25px; width: 165px; border: 2px #a2a2a2 solid; float: right; background-color: lightgray;}
+#sidebar-left { margin-top: 25px; width: 166px; clear:both; float: left; text-align:center; background-color: lightgray; display:inline;}
 #delimiter { clear: both; }
 #footer {  }
 
-.largecontent { padding: 20px; width: 740px; float: left;}
+.largecontent { padding-top: 0px; padding-left: 20px; padding-right: 20px; width: 740px; float: left;}
 
 .title { font-size: 11pt; font-family: 'Lora', sans-serif; font-weight: bold; }
 
@@ -53,10 +53,8 @@ h2{
 h2.archive-heading {font-family: 'Lora', sans-serif; color: darkslategreen; text-align: center; background-color: white; }
 h2.categories-heading {font-family: 'Lora', sans-serif;color: darkslategreen; text-align: center; background-color: white;}
 
-#img{
-
-    padding-top: 20px;
-    float:left;
+img{
+    margin-top: 10px;
 }
 
 

@@ -18,23 +18,11 @@
     
         
         <?php
-             $defaults = array(
-                'container' => true,
-                 // by default wp wraps menu in a div (ul)
-                'theme_location' => 'primary-menu',
-                 // tell wp where the primary template is
-                'menu_class' => 'no-bullet'
-                 // assign a class to the ul
-             );
+
             wp_nav_menu('$defaults');
                  
         ?>   
+        
         <div id="searchform">
         <?php get_search_form(); ?>
         </div>
-            
-            
-          
-         
-            
-        

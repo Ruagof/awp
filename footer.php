@@ -1,4 +1,4 @@
-<?php wp_footer() ?>
+
 
         <hr/>
         <div id="sponsors">
@@ -18,12 +18,10 @@
     </div>
     <!-- wraps entire body, starts from header -->
 
-    
 
+    <?php wp_footer() ?>
+    <!-- tells WordPress to load JS etc -->
 
-        <script>$(document).foundation.min();</script>
-
-    
     </body>
     <!-- startted in header -->
 </html>
